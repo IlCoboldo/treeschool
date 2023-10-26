@@ -4,42 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esercitazione Paolo</title>
-    <style> fieldset{ margin-left: 550px; margin-right: 550px; } </style>
+    <style>
+
+
+ .field{text-align: center;background-color:rgb(130, 175, 116) ;
+
+       
+ } 
+
+ .foot{ text-align: center;display: flex; flex-direction: column;
+  text-decoration: blink;
+} 
+
+
+ @media only screen and (max-width: 480px) {
+  body {
+                                       /* cambio il colore in automatico in base alla grandezza della pagina*/
+    background-color: lightblue;
+  }}
+
+  
+ img{   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;}
+
+  
+       
+  @media only screen and (max-width: 480px) {
+  img{ display: none; }
+  }
+
+  @media only screen and (max-width: 480px) {
+  .field{ background-color: crimson;
+        font-size: larger;
+        font-weight: 600; }
+  }
+
+
+  @media only screen and (max-width: 480px) {
+  .foot{ font-size: larger;
+        font-weight: 600; 
+        background-color: crimson
+        ;border-style: groove;
+        }
+  }
+
+.g2{ letter-spacing: 2mm;}
+
+    </style>
 </head>
 
 <body>
  
 
+
+<header>
+<img src="./IMG/PNG_transparency_demonstration_1.png" alt="logo">
+<h1 style="text-align: center;" >Registrati</h1>
+</header>
+<main>
+
+
+
+
+<fieldset class="field"> 
 <Form>
-
-
-<h1 style="text-align:center ;">Registrati</h1>
-
-<fieldset style="text-align: center;"> 
-
-
 <legend>Nome</legend><label><input type="Name"> </label>
 <legend>Cognome</legend><label><input type="Name"> </label>
 <legend>Email</legend><label><input type="Name"> </label>
 <legend>Password</legend><Label><input type="password" maxlength="14" size="23" ></label>
 <br>
-  <input style="text-align: center;" type="submit" value="invia" > 
+  <input style="text-align: center;" type="submit" value="invia"  > 
   <input type="reset"  value="Ricarica">
 </fieldset>
-
-
 </form>
-       <footer style="text-align: center;">Contatti
-<br>
+
+</main>
+
+
+
+
+       <footer class="foot">
+              
+              <h2 class="g2">Contatti</h2>
+
         <a href="https://www.youtube.com/">Social
-<br>  
+ 
        <a href="mailto:Carmelo@cavallo.com">Mail
-<br>   
+   
        <a href="https://www.home.it">Torna alla home</a> 
            
        </footer>
 
-       aggiornato
+      
 
     
 </body>
