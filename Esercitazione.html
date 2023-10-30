@@ -5,16 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esercitazione Paolo</title>
     <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+   }
+    
+
+.div2{position:unset;
+  display: flex;
+  justify-content:space-between;
+  
+   
+    
+  background-color: rgb(50, 52, 217);
+  
 
 
- .field{text-align: center;background-color:rgb(130, 175, 116) ;
+
+}
+
+ 
+      
+
+ul {
+  
+  display:flex;
+  flex-direction:row;
+  list-style-type: none;
+  
+  margin: 0;
+  padding: 0;
+  
+  
+}
+
+
+
+
+ li a {
+   
+  
+    color: #000;
+    padding: 8px 16px;
+    text-decoration:underline;
+    justify-content:flex-end;
+    
+   
+  
+  }
+
+  
+  li a:hover {
+    background-color: #555555;
+    color: white;
+
+    
+  }
+
+  
+
+
+ .field{text-align: center;background-color:rgb(130, 175, 116)  ;
 
        
  } 
 
  .foot{ text-align: center;display: flex; flex-direction: column;
-  text-decoration: blink;
+  text-decoration: blink; width: 100%; margin: 0px;border: solid 2px rgb(38, 255, 0);
 } 
+
+img{   display: block;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;}
+
 
 
  @media only screen and (max-width: 480px) {
@@ -24,12 +91,7 @@
   }}
 
   
- img{   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;}
-
-  
+ 
        
   @media only screen and (max-width: 480px) {
   img{ display: none; }
@@ -56,15 +118,26 @@
 </head>
 
 <body>
- 
-
+ <div class="div2">
+  <nav  class="nav">
+    
+    <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a  href="#about" >About</a></li>
+  
+  </ul>
+   
+  </nav>
+  </div>
+  
 
 <header>
 <img src="./IMG/PNG_transparency_demonstration_1.png" alt="logo">
-<h1 style="text-align: center;" >Registrati</h1>
+<h1 style="text-align: center;padding-top: 40px;" >Registrati</h1>
 </header>
 <main>
-
 
 
 
@@ -77,8 +150,13 @@
 <br>
   <input style="text-align: center;" type="submit" value="invia"  > 
   <input type="reset"  value="Ricarica">
+</Form>
+
+
 </fieldset>
-</form>
+
+
+
 
 </main>
 
@@ -86,7 +164,7 @@
 
 
        <footer class="foot">
-              
+          
               <h2 class="g2">Contatti</h2>
 
         <a href="https://www.youtube.com/">Social
@@ -94,9 +172,9 @@
        <a href="mailto:Carmelo@cavallo.com">Mail
    
        <a href="https://www.home.it">Torna alla home</a> 
-           
+   
        </footer>
-
+   
       
 
     
